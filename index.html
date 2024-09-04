@@ -32,13 +32,14 @@
                         <h2 class="card-title">Triangle</h2>
                         <p class="text-center">Area(A) = 0.5 X b X h</p>
                         <div>
-                            <input class="w-24 text-xl p-2 rounded-sm" type="text" placeholder="b">
+                            <input id="triangle-base" class="w-24 text-xl p-2 rounded-sm bg-base-200" type="text" placeholder="b">
                         <span class="mr-4 ">cm</span>
-                        <input class="w-24 text-xl p-2 rounded-sm"  type="text" placeholder="h">
+                        <!-- triangle height -->
+                        <input id="triangle-height" class="w-24 text-xl p-2 rounded-sm bg-base-200"  type="text" placeholder="h">
                         <span>cm</span>
                         </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary w-full">Buy Now</button>
+                            <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
