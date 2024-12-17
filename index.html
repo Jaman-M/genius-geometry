@@ -38,6 +38,9 @@
                         <input id="triangle-height" class="w-24 text-xl p-2 rounded-sm bg-base-200"  type="text" placeholder="h">
                         <span>cm</span>
                         </div>
+                        <div>
+                            <p>Area: <span id="triangle-area"></span> <span>cm <sup>2</sup></span></p>
+                        </div>
                         <div class="card-actions justify-end">
                             <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
@@ -50,10 +53,17 @@
                             alt="Shoes" />
                     </figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <h2 class="card-title">Rectangle</h2>
+                        <p>Area(A) = L x W</p>
+                        <div class="flex">
+                            <input class="w-24 text-xl p-2 rounded-sm bg-base-200" type="text" id="rectangle-lenght" placeholder="length"> <span class="mr-4 content-center">cm</span>
+                            <input class="w-24 text-xl p-2 rounded-sm bg-base-200" id="rectangle-width" type="text" placeholder="width"> <span class="content-center">cm</span>
+                        </div>
+                        <div>
+                            <p>Area: <span id="rectangle-area">0</span> <span>cm<sup>2</sup></span></p>
+                        </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -123,6 +133,7 @@
         </div>
     </main>
     <script src="scripts/triangle-calculate.js"></script>
+    <script src="scripts/rectangle-area.js"></script>
 </body>
 
 </html>
