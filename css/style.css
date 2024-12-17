@@ -1,17 +1,13 @@
 /* styles.css */
 
 /* Default card styling */
-.card1 {
-    width: 200px;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+.ellipse-card {
+    
     transition: background-color 0.3s ease;
   }
   
   /* Hover effect */
-  .card1:hover {
+  .ellipse-card:hover {
     background-color: #f0a500;
   }
   
