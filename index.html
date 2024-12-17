@@ -9,6 +9,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
 
 
 </head>
@@ -124,16 +125,23 @@
                     </div>
                 </div>
                 <!-- ellipse -->
-                <div class="card bg-base-100 w-96 shadow-xl">
+                <div class="card bg-base-100 w-96 shadow-xl card1">
                     <figure>
                         <img src="images/ellipse.png"
                             alt="Shoes" />
                     </figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <h2 class="card-title">Ellipse</h2>
+                        <p>Area = 𝜋 * a * b</p>
+                        <div class="flex">
+                            <input type="text" class="w-24 text-xl p-2 rounded-sm bg-base-200" id="ellipse-major-radious" placeholder="major"> <span class="mr-4 content-center">cm</span>
+                            <input type="text" class="w-24 text-xl p-2 rounded-sm bg-base-200" id="ellipse-minor-radious" placeholder="minor"> <span class="mr-4 content-center">cm</span>
+                        </div>
+                        <div>
+                            <p>Area: <span id="ellipse-area">0</span> <span>cm<sup>2</sup></span></p>
+                        </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button class="btn btn-primary w-full" onclick="calculateEllipseArea()">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -150,6 +158,7 @@
     <script src="scripts/rectangle-area.js"></script>
     <script src="scripts/parallelogram-area.js"></script>
     <script src="scripts/pentagon-area.js"></script>
+    <script src="scripts/ellipse-area.js"></script>
 </body>
 
 </html>
